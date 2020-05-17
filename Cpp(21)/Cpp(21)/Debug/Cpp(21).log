@@ -1,0 +1,9 @@
+﻿  main.cpp
+D:\GIT仓库\Cpp--Learning\Cpp(21)\Cpp(21)\main.cpp(389,2): error C2065:  “String”: 未声明的标识符
+D:\GIT仓库\Cpp--Learning\Cpp(21)\Cpp(21)\main.cpp(389,9): error C2146:  语法错误: 缺少“;”(在标识符“s1”的前面)
+D:\GIT仓库\Cpp--Learning\Cpp(21)\Cpp(21)\main.cpp(389,9): error C3861:  “s1”: 找不到标识符
+D:\GIT仓库\Cpp--Learning\Cpp(21)\Cpp(21)\main.cpp(390,2): error C2065:  “String”: 未声明的标识符
+D:\GIT仓库\Cpp--Learning\Cpp(21)\Cpp(21)\main.cpp(390,9): error C2146:  语法错误: 缺少“;”(在标识符“s2”的前面)
+D:\GIT仓库\Cpp--Learning\Cpp(21)\Cpp(21)\main.cpp(390,12): error C2065:  “s1”: 未声明的标识符
+D:\GIT仓库\Cpp--Learning\Cpp(21)\Cpp(21)\main.cpp(390,9): error C3861:  “s2”: 找不到标识符
+D:\GIT仓库\Cpp--Learning\Cpp(21)\Cpp(21)\main.cpp(392,1): error C2143:  语法错误: 缺少“;”(在“}”的前面)
