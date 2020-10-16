@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\GIT仓库\Cpp--Learning\Cpp(42)\Cpp(42)\main.cpp(624): error C2668:  “Date::Date”: 对重载函数的调用不明确
+D:\GIT仓库\Cpp--Learning\Cpp(42)\Cpp(42)\main.cpp(597,2): message :  可能是“Date::Date(int,int,int)”
+D:\GIT仓库\Cpp--Learning\Cpp(42)\Cpp(42)\main.cpp(590,2): message :  或    “Date::Date(void)”
+D:\GIT仓库\Cpp--Learning\Cpp(42)\Cpp(42)\main.cpp(624,9): message :  尝试匹配参数列表“()”时
