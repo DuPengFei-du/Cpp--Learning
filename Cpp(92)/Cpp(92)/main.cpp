@@ -3209,23 +3209,241 @@
 //}
 
 
-#include<stdio.h>
-int CheckSystem()
-{
-	union Un
-	{
-		int i;
-		char c;
-	}u;
-	u.i = 1;
-	return u.c;
-}
-int main()
-{
-	int ret = CheckSystem();
-	if (ret == 1)
-		printf("小端\n");
-	else
-		printf("大端\n");
-	return 0;
-}
+//#include<stdio.h>
+//int CheckSystem()
+//{
+//	union Un
+//	{
+//		int i;
+//		char c;
+//	}u;
+//	u.i = 1;
+//	return u.c;
+//}
+//int main()
+//{
+//	int ret = CheckSystem();
+//	if (ret == 1)
+//		printf("小端\n");
+//	else
+//		printf("大端\n");
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10] = { 1,3,5,7,9,2,4,6,8,10 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (int i = 0; i < sz - 1; i++)
+//	{
+//		for (int j = 0; j < sz - i - 1; j++)
+//		{
+//			if (arr[j] > arr[j + 1])
+//			{
+//				int temp = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = temp;
+//			}
+//		}
+//	}
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10] = { 1,3,5,7,9,2,4,6,8,10 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (int i = 0; i < sz - 1; i++)
+//	{
+//		int flag = 1;
+//		for (int j = 0; j < sz - i - 1; j++)
+//		{
+//			if (arr[j] > arr[j + 1])
+//			{
+//				int temp = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = temp;
+//				flag = 0;
+//			}
+//		}
+//		if (flag == 1)
+//			break;
+//	}
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<string.h>
+//int main()
+//{
+//	char arr[] = "ABCDEF";
+//	int ret = strlen(arr);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<assert.h>
+//int my_strlen(const char* str)
+//{
+//	assert(str);
+//	if (*str == '\0')
+//		return 0;
+//	else
+//		return 1 + my_strlen(str+1);
+//}
+//int main()
+//{
+//	char arr[] = "ABCDEF";
+//	int ret = my_strlen(arr);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<assert.h>
+//int my_strlen(const char* str)
+//{
+//	assert(str);
+//	int count = 0;
+//	while (*str)
+//	{
+//		str++;
+//		count++;
+//	}
+//	return count;
+//}
+//int main()
+//{
+//	char arr[] = "ABCDEF";
+//	int ret = my_strlen(arr);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<assert.h>
+//int my_strlen(char* str)
+//{
+//	assert(str);
+//	char* ret = str;
+//	while (*str)
+//	{
+//		str++;
+//	}
+//	return str - ret;
+//}
+//int main()
+//{
+//	char arr[] = "ABCDEF";
+//	int ret = my_strlen(arr);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<assert.h>
+//char* my_strcpy(char* dest, const char* source)
+//{
+//	assert(dest);
+//	assert(source);
+//	char* ret = dest;
+//	while (*dest++ = *source++)
+//	{
+//		;
+//	}
+//	return ret;
+//}
+//int main()
+//{
+//	char arr1[20] = { 0 };
+//	char arr2[] = "ABCDEF";
+//	my_strcpy(arr1, arr2);
+//	printf("%s", arr1);
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<assert.h>
+//char* my_strcat(char* dest, const char* source)
+//{
+//	assert(dest);
+//	assert(source);
+//	char* ret = dest;
+//	while (*dest != '\0')
+//	{
+//		dest++;
+//	}
+//	while (*dest++ = *source++)
+//	{
+//		;
+//	}
+//	return ret;
+//}
+//int main()
+//{
+//	char arr1[20] = "ab";
+//	char arr2[] = "ABCDEF";
+//	my_strcat(arr1, arr2);
+//	printf("%s", arr1);
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<string.h>
+//int main()
+//{
+//	char arr1[] = "bdefetfsf";
+//	char arr2[] = "abc";
+//	int ret = strcmp(arr1, arr2);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+
+////模拟实现是字符串比较函数
+//#include<stdio.h>
+//#include<assert.h>
+//int my_strcmp(const char* str1, const char* str2)
+//{
+//	assert(str1);
+//	assert(str2);
+//	while (*str1 == *str2)
+//	{
+//		if (*str1 == '\0')
+//			return 0;
+//		str1++;
+//		str2++;
+//	}
+//	return *str1 - *str2;
+//}
+//
+//int main()
+//{
+//	char arr1[] = "bcdef";
+//	char arr2[] = "abc";
+//	int ret = my_strcmp(arr1, arr2);
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
